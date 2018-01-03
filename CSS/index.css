@@ -120,17 +120,16 @@ h2 > a:hover:before {
 
 .groupe-h1{
   text-align: center;
-  padding-top: 50px;
+  padding-top: 100px;
   opacity:0;
   transform:translateX(-20px);
   transition: all 0.3s ease-in-out;
 }
 
 .container{
-  margin-top: 50px;
 }
 
-.row{
+.group-row{
   height:500px;
   opacity:0;
   transform:translateX(-20px);
@@ -138,10 +137,23 @@ h2 > a:hover:before {
 }
 
 .photo-group{
-  background-image: url("../photo/puzzle.jpg");
+  background-image: url("../photo/stage.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.text-group{
+  vertical-align: center;
+}
+
+.text-group p{
+  text-align: center;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
 .text{
@@ -149,7 +161,62 @@ h2 > a:hover:before {
 
 }
 
+.large-window{
+  margin: 100px auto 0px auto;
+  height:350px;
+  width: 350px;
+  background-image: url("../photo/puzzle.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.img-container{
+  margin-top: 100px;
+}
+
+.img-row{
+
+}
+
+.portrait img{
+  width:210px;
+  height: auto;
+}
+
+.portrait{
+  opacity:0;
+  transform:translateX(-20px);
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.portrait img{
+  display:block;
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+}
+
 .is-showing{
   opacity:1;
   transform:translateX(0px);
+}
+
+.portrait:hover .caption{
+  left:0%;
+}
+
+.portrait:hover img{
+  transform: scale(1.2);
+}
+
+.caption{
+  font-size: 20px;
+  position: absolute;
+  bottom: 0px;
+  left: -100%;
+  background: black;
+  color:white;
+  padding: 2px 8px;
+  transition: all 0.3s ease-in-out;
 }

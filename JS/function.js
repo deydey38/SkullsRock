@@ -30,8 +30,16 @@ $(window).scroll(function(){
     $('.groupe-h1').addClass("is-showing");
   }
 
-  if(wScroll > $('.row').offset().top - $(window).height()/1.5){
-    $('.row').addClass("is-showing");
+  if(wScroll > $('.group-row').offset().top - $(window).height()/1.5){
+    $('.group-row').addClass("is-showing");
+  }
+
+  if(wScroll > $('.img-row').offset().top - $(window).height()/1.5){
+    $('.img-row .portrait').each(function(i){
+      setTimeout(function(){
+        $('.img-row .portrait').eq(i).addClass("is-showing");
+      }, 150 * (i+1));
+    });
   }
 
 });
