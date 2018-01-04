@@ -16,6 +16,7 @@ function myFunction() {
 $(window).scroll(function(){
   var wScroll = $(this).scrollTop();
   var op = 0.3+wScroll/1000;
+  var arrowOpa = 1-wScroll/100;
 
   console.log(wScroll);
   $(".logo").css({
@@ -24,6 +25,10 @@ $(window).scroll(function(){
 
   $(".filter").css({
     'background-color' : 'rgba(0, 0, 0, '+op+')'
+  });
+
+  $(".arrow").css({
+    'color' : 'rgba(255, 255, 255, '+arrowOpa+')'
   });
 
   if(wScroll > $('.groupe-h1').offset().top - $(window).height()/1.5){

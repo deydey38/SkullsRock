@@ -54,6 +54,15 @@ body {
   color:white;
 }
 
+.arrow{
+  color:white;
+  bottom: 0px;
+  position: absolute;
+  left:50%;
+  margin-left: -15px;
+  bottom: 0%;
+}
+
 .sticky {
   position: fixed;
   top: 0;
@@ -241,6 +250,7 @@ h2 > a:hover:before {
 
 .tour-container{
   margin-top: 50px;
+  overflow: hidden;
 }
 
 .tour-row{
