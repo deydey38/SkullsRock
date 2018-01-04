@@ -205,11 +205,6 @@ h2 > a:hover:before {
   -webkit-filter: blur(0);
 }
 
-.is-showing{
-  opacity:1;
-  transform:translateX(0px);
-}
-
 .portrait:hover .caption{
   left:0%;
 }
@@ -233,4 +228,53 @@ h2 > a:hover:before {
 
 .caption strong{
   font-family: "sunday";
+}
+
+.tour-h1{
+  font-family: "sunday";
+  text-align: center;
+  padding-top: 100px;
+  opacity:0;
+  transform:translateX(-20px);
+  transition: all 0.3s ease-in-out;
+}
+
+.tour-container{
+  margin-top: 50px;
+}
+
+.tour-row{
+  width:90%;
+  margin:auto;
+}
+
+.tour-date{
+  border:1px solid #b1b1b1;
+  margin: 0px 10px;
+  padding: 20px 16px;
+  background: white;
+}
+
+.date-1{
+  transform: translate(100px, 20px);
+}
+
+.date-2{
+  //z-index: 2;
+}
+
+.date-3{
+  transform: translate(-100px, 20px);
+}
+
+.tour-date h2{
+  font-family: "sunday";
+  text-align: center;
+}
+
+
+
+.is-showing{
+  opacity:1;
+  transform:translateX(0px);
 }
