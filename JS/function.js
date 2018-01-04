@@ -51,6 +51,14 @@ $(window).scroll(function(){
     $('.tour-h1').addClass("is-showing");
   }
 
+  if(wScroll > $('.contact-h1').offset().top - $(window).height()/1.5){
+    $('.contact-h1').addClass("is-showing");
+  }
+
+  if(wScroll > $('.contact-row').offset().top - $(window).height()/1.5){
+    $('.contact-row').addClass("is-showing");
+  }
+
   if(wScroll > $('.tour-row').offset().top - $(window).height()){
 
     var offset = Math.min(0, wScroll - $('.tour-row').offset().top + $(window).height()-350);
