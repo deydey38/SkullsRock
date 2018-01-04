@@ -144,7 +144,6 @@ h2 > a:hover:before {
 }
 
 .groupe-container{
-  margin-bottom: 70px;
 }
 
 .group-row{
@@ -190,7 +189,7 @@ h2 > a:hover:before {
 }
 
 .img-container{
-  margin: 100px auto;
+  margin: 50px auto 100px auto;
 }
 
 .img-row{
