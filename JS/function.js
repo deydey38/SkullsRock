@@ -68,3 +68,11 @@ $(window).scroll(function(){
   }
 
 });
+
+$('.arrow').on('click', function (e) {
+    e.preventDefault();
+    var targetSec = "#groupe";
+    var off = $(targetSec).offset();
+    console.log("offset "+off);
+    $('html, body').animate({'scrollTop': off.top}, 500, 'swing');
+  });

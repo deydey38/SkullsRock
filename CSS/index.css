@@ -61,8 +61,18 @@ body {
   bottom: 0px;
   position: absolute;
   left:50%;
-  margin-left: -15px;
-  bottom: 0%;
+  margin-left: -40px;
+  bottom: 1%;
+  transition: all 0.1s ease-in-out 0s;
+}
+
+.arrow:before{
+  font-size: 80px;
+  transition: all 0.1s ease-in-out 0s;
+}
+
+.arrow:hover{
+  transform: translateY(10px);
 }
 
 .sticky {
@@ -320,7 +330,7 @@ h2 > a:hover:before {
   height: 0px;
   background: none;
   border: none;
-  border-top: 2px solid rgba(0, 0, 0, 0.1);
+  border-top: 2px solid #b1b1b1;
   width: 40%;
   margin: auto;
 }
