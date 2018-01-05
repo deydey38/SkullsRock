@@ -1,5 +1,11 @@
 $(document).ready(function(){
 
+  setTimeout(function(){
+    $(".arrow").css({
+      'color' : 'rgba(255, 255, 255, '+1+')'
+    });
+  },500);
+
   window.onscroll = function() {myFunction()};
 
   var navbar = document.getElementById("navbar");
