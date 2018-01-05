@@ -63,16 +63,20 @@ body {
   left:50%;
   margin-left: -40px;
   bottom: 1%;
-  transition: all 0.1s ease-in-out 0s;
-  color : rgba(255, 255, 255, 0);
-}
+  transition: all 0.3s ease-in-out 0s;
+  }
 
-.arrow:before{
+  .move{
+    transform: translateY(-50px);
+    transition: all 0.3s ease-in-out 0s;
+  }
+
+  .arrow:before{
   font-size: 80px;
-  transition: all 0.1s ease-in-out 0s;
-}
+  transition: all 0.3s ease-in-out 0s;
+  }
 
-.arrow:hover{
+  .arrow:hover{
   transform: translateY(10px);
 }
 

@@ -1,10 +1,13 @@
 $(document).ready(function(){
 
   setTimeout(function(){
-    $(".arrow").css({
-      'color' : 'rgba(255, 255, 255, '+1+')'
-    });
+    $(".arrow").addClass("move");
   },500);
+
+  setTimeout(function(){
+    $(".arrow").removeClass("move");
+  },900);
+
 
   window.onscroll = function() {myFunction()};
 
