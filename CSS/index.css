@@ -68,12 +68,10 @@ body {
 
   .move{
     transform: translateY(-50px);
-    transition: all 0.3s ease-in-out 0s;
   }
 
   .arrow:before{
   font-size: 80px;
-  transition: all 0.3s ease-in-out 0s;
   }
 
   .arrow:hover{

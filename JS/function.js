@@ -6,7 +6,7 @@ $(document).ready(function(){
 
   setTimeout(function(){
     $(".arrow").removeClass("move");
-  },900);
+  },800);
 
 
   window.onscroll = function() {myFunction()};
