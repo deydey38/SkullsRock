@@ -39,7 +39,7 @@ $(window).scroll(function(){
     $('.group-row').addClass("is-showing");
   }
 
-  if(wScroll > $('.img-row').offset().top - $(window).height()/1.5){
+  if(wScroll > $('.img-container').offset().top -100- $(window).height()/1.5){
     $('.img-row .portrait').each(function(i){
       setTimeout(function(){
         $('.img-row .portrait').eq(i).addClass("is-showing");
