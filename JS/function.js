@@ -2,11 +2,11 @@ $(document).ready(function(){
 
   setTimeout(function(){
     $(".arrow").addClass("move");
-  },500);
+  },1000);
 
   setTimeout(function(){
     $(".arrow").removeClass("move");
-  },800);
+  },1300);
 
 
   window.onscroll = function() {myFunction()};
@@ -56,6 +56,14 @@ $(document).ready(function(){
           $('.img-row .portrait').eq(i).addClass("is-showing");
         }, 150 * (i+1));
       });
+    }
+
+    if(wScroll > $('.photo-h1').offset().top - $(window).height()/1.5){
+      $('.photo-h1').addClass("is-showing");
+    }
+
+    if(wScroll > $('.w3-third').offset().top - $(window).height()/1.5){
+      $('.w3-third').addClass("is-showing");
     }
 
     if(wScroll > $('.tour-h1').offset().top - $(window).height()/1.5){

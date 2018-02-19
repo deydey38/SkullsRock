@@ -150,6 +150,7 @@ h2 > a:hover:before {
 .groupe-h1{
   text-align: center;
   padding-top: 100px;
+  padding-bottom: 50px;
   opacity:0;
   transform:translateX(-20px);
   transition: all 0.3s ease-in-out;
@@ -254,10 +255,36 @@ h2 > a:hover:before {
   font-family: "sunday";
 }
 
+#myGrid{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.w3-third img{
+  margin-bottom: 12px;
+}
+
 .tour-h1{
   font-family: "sunday";
   text-align: center;
   padding-top: 100px;
+  opacity:0;
+  transform:translateX(-20px);
+  transition: all 0.3s ease-in-out;
+}
+
+.photo-h1{
+  font-family: "sunday";
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  opacity:0;
+  transform:translateX(-20px);
+  transition: all 0.3s ease-in-out;
+}
+
+.w3-third{
   opacity:0;
   transform:translateX(-20px);
   transition: all 0.3s ease-in-out;
