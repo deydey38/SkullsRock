@@ -1,9 +1,6 @@
 $(window).on('load', function() {
   // Animate loader off screen
   $(".se-pre-con").fadeOut("slow");
-});
-
-$(document).ready(function(){
 
   setTimeout(function(){
     $(".arrow").addClass("move");
@@ -12,6 +9,17 @@ $(document).ready(function(){
   setTimeout(function(){
     $(".arrow").removeClass("move");
   },1300);
+});
+
+$(document).ready(function(){
+
+  /*setTimeout(function(){
+    $(".arrow").addClass("move");
+  },1000);
+
+  setTimeout(function(){
+    $(".arrow").removeClass("move");
+  },1300);*/
 
 
   window.onscroll = function() {myFunction()};
