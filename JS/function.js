@@ -22,8 +22,8 @@ $(window).on('load', function() {
 });
 
 $(document).ready(function(){
-
-  /*setTimeout(function(){
+/*
+  setTimeout(function(){
     $(".arrow").addClass("move");
   },1000);
 
