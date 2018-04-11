@@ -1,3 +1,8 @@
+$(window).on('load', function() {
+  // Animate loader off screen
+  $(".se-pre-con").fadeOut("slow");
+});
+
 $(document).ready(function(){
 
   setTimeout(function(){
@@ -29,7 +34,7 @@ $(document).ready(function(){
     var op = 0.3+wScroll/1000;
     var arrowOpa = 1-wScroll/100;
 
-    console.log(wScroll);
+    //console.log(wScroll);
     $(".logo").css({
       'transform':'translate(0px, '+wScroll/1.75+'px)'
     });
