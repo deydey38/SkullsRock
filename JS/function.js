@@ -1,6 +1,16 @@
+$('html, body').css({
+    overflow: 'hidden',
+    height: '100%'
+});
+
 $(window).on('load', function() {
   // Animate loader off screen
   $(".se-pre-con").fadeOut("slow");
+
+  $('html, body').css({
+    overflow: 'auto',
+    height: 'auto'
+});
 
   setTimeout(function(){
     $(".arrow").addClass("move");
